@@ -12,7 +12,7 @@ chrome_options.add_argument('--disable-dev-shm-usage')
 chromedriver = "/usr/bin/chromedriver"
 os.environ["webdriver.chrome.driver"] = chromedriver
 
-file = './Spider/a.xlsx'
+file = './Spider/8.xlsx'
 max_a = load_workbook(file).active.max_row
 print(max_a)
 zheng = 0
@@ -20,7 +20,6 @@ jia = 0
 
 
 def writeexcle(t):
-    file = './Spider/a.xlsx'
     wb = load_workbook(file)
     sheet = wb.active
     max_row = sheet.max_row - t
@@ -107,7 +106,7 @@ def cs():
         d.close()
 
     print('成功', cheng)
-    print('shib', 128 - cheng)
+
 
 
 cs()
