@@ -30,7 +30,7 @@ jobs:
           pip install requests openpyxl beautifulsoup4 selenium
       - name: 'Working'
         run: |
- 
+
           sudo cp -p ./chrome/chromedriver /usr/bin/
           chmod -R 777 /usr/bin/chromedriver
           python ./Spider/qd.py
